@@ -13,7 +13,8 @@ function​ ​response​(​room​,​ ​msg​,​ ​sender​,​ ​isGr
   var NowTime1 = d.getFullYear() + '년 ' + (d.getMonth() + 1) + '월 ' + d.getDate() + '일 ' + d.getHours() + '시 ' + d.getMinutes() + '분 ';
   var NowTi1me = d.getFullYear() + '년 ' + (d.getMonth() + 1) + '월 ' + d.getDate() + '일 ' + d.getHours() + '시 ' + d.getMinutes() + '분 ' + d.getSeconds() + '초 ';
   const​ ​NowTime ​=​ ​d​.​getFullYear​(​)​ ​+​ ​'년 '​ ​+​ ​(​d​.​getMonth​(​)​ ​+​ ​1​)​ ​+​ ​'월 '​ ​+​ ​d​.​getDate​(​)​ ​+​ ​'일 '​; 
-  ​const​ ​prefix​ ​=​ ​"!"​;​ ​//접두사, 즉 앞에 붙는 기호입니다. 필요 없으시면 ""로 처리하셔도 됩니다. 
+  ​const​ ​prefix​ ​=​ ​"!"​;​ ​//접두사, 즉 앞에 붙는 기호입니다. 필요 없으시면 ""로 처리하셔도 됩니다.
+  const Mybotname = ["안태영하트김재준", "안태영하트안은용", "안태영하트강티미", "안태영하트양원중","안태영하트김민준", "안태영하트정은찬", "안태영하트정서진"];
   ​const​ ​FS​ ​=​ ​FileStream​; 
   const Email = "routu7017@naver.com";
  ​   
@@ -23,7 +24,7 @@ function​ ​response​(​room​,​ ​msg​,​ ​sender​,​ ​isGr
   
     if​(​sendercheck​ ​==​ ​null​)​{ 
  ​   
-      FS​.​append​(​"sdcard/마시멜로봇의 출석/"​ ​+​ ​NowTime​ ​+​ ​"일자 출석목록"​,​"\n\n𝑨𝒕𝒕𝒆𝒏𝒅𝒂𝒏𝒄𝒆 𝑪𝒐𝒎𝒑𝒍𝒆𝒕𝒆.\n𝑺𝒆𝒏𝒅𝒆𝒓 : " + sender​ ​+​ "\n𝑹𝒐𝒐𝒎 : " + room + ​"\n𝑨𝒕𝒕𝒆𝒏𝒅𝒂𝒏𝒄𝒆 𝑻𝒊𝒎𝒆 : "​ +NowTime​ ​+​ ​"\n______________________________________\n\n"​);
+      FS​.​append​(​"sdcard/" + Mybotname +  "의 출석/"​ ​+​ ​NowTime​ ​+​ ​"일자 출석목록"​,​"\n\n𝑨𝒕𝒕𝒆𝒏𝒅𝒂𝒏𝒄𝒆 𝑪𝒐𝒎𝒑𝒍𝒆𝒕𝒆.\n𝑺𝒆𝒏𝒅𝒆𝒓 : " + sender​ ​+​ "\n𝑹𝒐𝒐𝒎 : " + room + ​"\n𝑨𝒕𝒕𝒆𝒏𝒅𝒂𝒏𝒄𝒆 𝑻𝒊𝒎𝒆 : "​ +NowTime​ ​+​ ​"\n______________________________________\n\n"​);
 
       FS​.​append​(​"sdcard/마시멜로봇의 출석/"​ ​+​ ​NowTime​ ​+​ ​"일자 출석목록"​ + room,​"\n\n𝑨𝒕𝒕𝒆𝒏𝒅𝒂𝒏𝒄𝒆 𝑪𝒐𝒎𝒑𝒍𝒆𝒕𝒆.\n𝑺𝒆𝒏𝒅𝒆𝒓 : " + sender​ ​+​ ​"\n𝑨𝒕𝒕𝒆𝒏𝒅𝒂𝒏𝒄𝒆 𝑻𝒊𝒎𝒆 : "​ ​+​ ​NowTime ​+​ ​"\n______________________________________\n\n"​); 
  
