@@ -14,7 +14,7 @@ function​ ​response​(​room​,​ ​msg​,​ ​sender​,​ ​isGr
   var NowTi1me = d.getFullYear() + '년 ' + (d.getMonth() + 1) + '월 ' + d.getDate() + '일 ' + d.getHours() + '시 ' + d.getMinutes() + '분 ' + d.getSeconds() + '초 ';
   const​ ​NowTime ​=​ ​d​.​getFullYear​(​)​ ​+​ ​'년 '​ ​+​ ​(​d​.​getMonth​(​)​ ​+​ ​1​)​ ​+​ ​'월 '​ ​+​ ​d​.​getDate​(​)​ ​+​ ​'일 '​; 
   ​const​ ​prefix​ ​=​ ​"!"​;​ ​//접두사, 즉 앞에 붙는 기호입니다. 필요 없으시면 ""로 처리하셔도 됩니다.
-  const Mybotname = ["안태영하트김재준", "안태영하트안은용", "안태영하트강티미", "안태영하트양원중","안태영하트김민준", "안태영하트정은찬", "안태영하트정서진"];
+  const Mybotname = ["마시멜로봇"];
   ​const​ ​FS​ ​=​ ​FileStream​; 
   const Email = "routu7017@naver.com";
  ​   
